@@ -4,142 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naadbramha | Mineral Water</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f7f9fc;
-            color: #333;
-        }
-
-        /* Header */
-        .header {
-            background: linear-gradient(135deg, #0a3d62, #1e90ff);
-            color: #fff;
-            text-align: center;
-            padding: 30px 15px;
-        }
-
-        .header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-
-        .header p {
-            margin-top: 8px;
-            font-size: 16px;
-        }
-
-        /* Product Section */
-        .product {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            padding: 40px 20px;
-            background-color: #fff;
-        }
-
-        .product-image img {
-            max-width: 250px;
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .product-details {
-            max-width: 420px;
-            margin-left: 40px;
-        }
-
-        .product-details h2 {
-            margin-top: 0;
-            font-size: 26px;
-        }
-
-        .tagline {
-            color: #1e90ff;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-
-        ul {
-            padding-left: 18px;
-        }
-
-        ul li {
-            margin-bottom: 8px;
-            font-size: 15px;
-        }
-
-        /* Button */
-        .know-more-btn {
-            margin-top: 20px;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 12px 22px;
-            font-size: 16px;
-            font-weight: 500;
-            background-color: #0a3d62;
-            color: #fff;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-        }
-
-        .know-more-btn:hover {
-            background-color: #07406e;
-        }
-
-        .btn-icon {
-            width: 18px;
-            height: 18px;
-            object-fit: contain;
-        }
-
-        /* About */
-        .about {
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .about h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .about p {
-            max-width: 700px;
-            margin: auto;
-            font-size: 15px;
-            line-height: 1.6;
-        }
-
-        /* Footer */
-        .footer {
-            background-color: #0a3d62;
-            color: #fff;
-            text-align: center;
-            padding: 12px;
-            font-size: 14px;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .product {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .product-details {
-                margin-left: 0;
-                margin-top: 25px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <!-- Header -->
@@ -188,12 +54,14 @@
         <p>© 2026 Naadbramha. All Rights Reserved.</p>
     </footer>
 
-    <!-- Script -->
-    <script>
-        function showMessage() {
-            alert("Naadbramha Mineral Water – Pure, Safe & Enriched with Essential Minerals.");
-        }
-    </script>
+    <!-- Image Popup -->
+    <div id="imagePopup" class="image-popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeImage()">×</span>
+            <img src="IMG-20260113-WA0016.jpg" alt="More Information">
+        </div>
+    </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
