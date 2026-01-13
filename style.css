@@ -1,4 +1,6 @@
-/* Reset */
+/* =========================
+   RESET & BASE STYLES
+========================= */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +13,9 @@ body {
     color: #333;
 }
 
-/* Header */
+/* =========================
+   HEADER
+========================= */
 .header {
     background: linear-gradient(90deg, #0077b6, #00b4d8);
     color: white;
@@ -29,7 +33,9 @@ body {
     margin-top: 8px;
 }
 
-/* Product Section */
+/* =========================
+   PRODUCT SECTION
+========================= */
 .product {
     display: flex;
     flex-wrap: wrap;
@@ -71,7 +77,14 @@ body {
     font-size: 16px;
 }
 
-.product-details button {
+/* =========================
+   KNOW MORE BUTTON
+========================= */
+.know-more-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     padding: 14px 30px;
     background-color: #0077b6;
     color: white;
@@ -79,13 +92,24 @@ body {
     border-radius: 6px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: 500;
+    transition: background 0.3s ease;
 }
 
-.product-details button:hover {
+.know-more-btn:hover {
     background-color: #023e8a;
 }
 
-/* About Section */
+/* Button icon */
+.btn-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
 .about {
     padding: 45px 20px;
     text-align: center;
@@ -103,7 +127,9 @@ body {
     line-height: 1.6;
 }
 
-/* Footer */
+/* =========================
+   FOOTER
+========================= */
 .footer {
     background-color: #023e8a;
     color: white;
@@ -112,10 +138,9 @@ body {
     font-size: 14px;
 }
 
-/* ========================= */
-/* MOBILE RESPONSIVE STYLES */
-/* ========================= */
-
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
 @media (max-width: 768px) {
 
     .header h1 {
@@ -144,7 +169,7 @@ body {
         text-align: left;
     }
 
-    .product-details button {
+    .know-more-btn {
         width: 100%;
     }
 
