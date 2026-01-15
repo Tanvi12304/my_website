@@ -1,203 +1,171 @@
-/* =========================
-   RESET & BASE STYLES
-========================= */
+/* ================= RESET ================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Fast, system-native fonts */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                 Roboto, Oxygen, Ubuntu, Cantarell,
-                 "Helvetica Neue", Arial, sans-serif;
-    background-color: #f5f9fc;
-    color: #333;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: #f5f8ff;
+    color: #222;
     line-height: 1.6;
 }
 
-/* =========================
-   HEADER
-========================= */
-.header {
-    background: linear-gradient(90deg, #0077b6, #00b4d8);
-    color: white;
-    text-align: center;
-    padding: clamp(28px, 5vw, 40px) 15px;
-}
-
-.header h1 {
-    font-size: clamp(26px, 6vw, 42px);
-    letter-spacing: 2px;
-}
-
-.header p {
-    font-size: clamp(14px, 3vw, 18px);
-    margin-top: 8px;
-}
-
-/* =========================
-   PRODUCT SECTION
-========================= */
-.product {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: clamp(30px, 5vw, 60px) 20px;
-    background-color: white;
+/* ================= LAYOUT ================= */
+.container {
     max-width: 1200px;
+    padding: 0 16px;
     margin: auto;
 }
 
-.product-image img {
-    width: 280px;
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+/* ================= HEADER ================= */
+.header {
+    text-align: center;
+    padding: 32px 16px;
+    background: linear-gradient(90deg, #1976d2, #42a5f5);
+    color: #fff;
 }
 
-/* =========================
-   PRODUCT DETAILS
-========================= */
+.header h1 {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.header p {
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+}
+
+/* ================= PRODUCT ================= */
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    align-items: center;
+    margin: 48px 0;
+}
+
+.product-image,
 .product-details {
-    max-width: 420px;
-    margin-left: clamp(0px, 5vw, 40px);
+    flex: 1 1 300px;
 }
 
 .product-details h2 {
-    font-size: clamp(22px, 4vw, 28px);
-    color: #0077b6;
+    font-size: 1.6rem;
+    margin-bottom: 8px;
 }
 
 .tagline {
-    font-style: italic;
-    margin: 10px 0 20px;
+    color: #1976d2;
+    font-weight: 600;
+    margin-bottom: 16px;
 }
 
 .product-details ul {
     list-style: none;
-    margin-bottom: 25px;
 }
 
 .product-details li {
-    margin-bottom: 10px;
-    font-size: 16px;
+    margin-bottom: 8px;
 }
 
-/* =========================
-   KNOW MORE BUTTON
-========================= */
-.know-more-btn {
-    display: inline-flex;
+/* ================= FSSAI ================= */
+.fssai-page {
+    margin: 48px 0;
+}
+
+.fssai-header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 14px 30px;
-    background-color: #0077b6;
-    color: white;
-    text-decoration: none;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.fssai-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1976d2;
+}
+
+.fssai-logo {
+    width: 100px;
+}
+
+.search-box {
+    margin-bottom: 16px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px;
     border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 500;
-    transition: background 0.3s ease, transform 0.2s ease;
-    min-height: 48px; /* touch-friendly */
+    border: 1px solid #cfd8dc;
 }
 
-.know-more-btn:hover {
-    background-color: #023e8a;
-    transform: translateY(-2px);
+.table-wrap {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #cfd8dc;
 }
 
-.btn-icon {
-    width: 18px;
-    height: 18px;
+.table-scroll {
+    overflow-x: auto;
 }
 
-/* =========================
-   ABOUT SECTION
-========================= */
+table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+thead {
+    background: #e8f0fe;
+}
+
+/* ================= ABOUT ================= */
 .about {
-    padding: clamp(35px, 5vw, 50px) 20px;
-    text-align: center;
+    margin: 48px 0;
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.06);
 }
 
 .about h2 {
-    font-size: clamp(22px, 4vw, 26px);
-    color: #0077b6;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+    color: #1976d2;
 }
 
-.about p {
-    max-width: 700px;
-    margin: auto;
-}
-
-/* =========================
-   FOOTER
-========================= */
+/* ================= FOOTER ================= */
 .footer {
-    background-color: #023e8a;
-    color: white;
     text-align: center;
-    padding: 18px;
-    font-size: 14px;
-}
-
-/* =========================
-   IMAGE POPUP
-========================= */
-.image-popup {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.75);
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-}
-
-.popup-content {
-    background: #fff;
     padding: 20px;
-    border-radius: 12px;
-    max-width: 90%;
-    max-height: 90%;
-    position: relative;
+    background: #0f172a;
+    color: #fff;
+    font-size: 0.9rem;
 }
 
-.popup-content img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 8px;
-}
-
-.close-btn {
-    position: absolute;
-    top: 8px;
-    right: 12px;
-    font-size: 26px;
-    cursor: pointer;
-}
-
-/* =========================
-   MOBILE OPTIMIZATION
-========================= */
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
-    .product-details {
-        margin-left: 0;
-        margin-top: 25px;
-        text-align: center;
+    .fssai-header {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .product-details li {
-        text-align: left;
-    }
-
-    .know-more-btn {
-        width: 100%;
+    table {
+        min-width: 600px;
     }
 }
