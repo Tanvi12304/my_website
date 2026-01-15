@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive & Browser Compatibility -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO -->
+    <meta name="description" content="Naadbramha Mineral Water with Added Minerals">
+
+    <title>Naadbramha | Mineral Water</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>Naadbramha</h1>
+    <p>With Added Minerals</p>
+</header>
+
+<main class="container">
+
+    <!-- PRODUCT SECTION -->
+    <section class="product">
+        <div class="product-image">
+            <img src="bottle.webp"
+                 alt="Naadbramha Mineral Water Bottle"
+                 loading="lazy">
+        </div>
+
+        <div class="product-details">
+            <h2>Naadbramha Mineral Water</h2>
+            <p class="tagline">Purity You Can Trust</p>
+
+            <ul>
+                <li><strong>Net Quantity:</strong> 500 ml</li>
+                <li><strong>Type:</strong> Packaged Drinking Water</li>
+                <li><strong>Added Minerals:</strong> Calcium, Magnesium & Sodium</li>
+                <li><strong>Best Before:</strong> 6 Months from Date of Manufacture</li>
+                <li><strong>Storage:</strong> Cool & Away from Sunlight</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- FSSAI SECTION -->
+    <section class="fssai-page" aria-labelledby="fssai-heading">
+
+        <div class="fssai-header">
+            <h2 id="fssai-heading" class="fssai-title">
+                Registered Proprietor / Brand Owner<br>
+                NAADBRAMHA FOOD & BEVERAGES PVT. LTD<br>
+                Pisoli Road, Pune, Maharashtra-411060
+            </h2>
+            <img src="fssai.webp" alt="FSSAI Logo" class="fssai-logo" loading="lazy">
+        </div>
+
+        <div class="search-box">
+            <label for="searchInput">Search FSSAI Records</label>
+            <input type="text" id="searchInput"
+                   placeholder="Search by first three characters, address, or license number">
+        </div>
+
+        <div class="note-bar">
+            <p>FOR MANUFACTURING UNIT ADDRESS, FSSAI LICENSE No. READ FIRST THREE CHARACTERS OF LOT NO/ BATCH NO. & SEE BELOW</p>
+        </div>
+
+        <div class="table-wrap">
+            <div class="table-scroll">
+                <table id="fssaiTable">
+                    <thead>
+                        <tr>
+                            <th>SR.</th>
+                            <th>First 3 Characters</th>
+                            <th>Address</th>
+                            <th>FSSAI License No</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>NFB</td>
+                            <td>
+                                MTKD BY. NAADBRAMHA FOOD & BEVERAGES PVT. LTD<br>
+                                Pisoli Road, Pune, Maharashtra-411060
+                            </td>
+                            <td>
+                                <img src="fssai.webp" alt="FSSAI Logo" class="fssai-table-logo">
+                                <span class="license-number">11521036001346</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>PPL</td>
+                            <td>
+                                MFD BY. PALLAVI PLASTICS PVT LTD<br>
+                                Dhanore, Pune, Maharashtra-41220
+                            </td>
+                            <td>
+                                <img src="fssai.webp" alt="FSSAI Logo" class="fssai-table-logo">
+                                <span class="license-number">11522997000510</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>RFB</td>
+                            <td>
+                                MFD BY. RM FOODS AND BEVERAGES<br>
+                                Sinhagad Road, Pune-411041
+                            </td>
+                            <td>
+                                <img src="fssai.webp" alt="FSSAI Logo" class="fssai-table-logo">
+                                <span class="license-number">10016022005428</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+        <h2>About</h2>
+        <p>
+            Naadbramha delivers premium-quality packaged drinking water enriched
+            with essential minerals, purified using advanced multi-stage
+            filtration to ensure safety, freshness, and consistency in every sip.
+        </p>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 Naadbramha Food and Beverages Pvt. Ltd. All Rights Reserved.</p>
+</footer>
+
+<!-- JS (lightweight, browser-safe) -->
+<script>
+    const searchInput = document.getElementById("searchInput");
+    const rows = document.querySelectorAll("#fssaiTable tbody tr");
+
+    searchInput.addEventListener("input", () => {
+        const filter = searchInput.value.toLowerCase();
+        rows.forEach(row => {
+            row.style.display = row.innerText.toLowerCase().includes(filter)
+                ? ""
+                : "none";
+        });
+    });
+</script>
+
+</body>
+</html>
