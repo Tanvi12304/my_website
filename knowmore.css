@@ -1,21 +1,28 @@
+/* BODY */
 body {
-    background-color: #f0f0f0; /* light background to highlight the image */
+    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* safer than height */
     margin: 0;
+    padding: 10px; /* prevents edge touching on phones */
 }
 
+/* IMAGE CONTAINER */
 .image-container {
-    border: 5px solid #0077b6; /* border color and thickness */
-    padding: 10px; /* space between image and border */
-    background-color: white; /* optional, to make border more visible */
+    border: 5px solid #0077b6;
+    padding: 10px;
+    background-color: white;
+    max-width: 100%;
 }
 
+/* IMAGE */
 .large-image {
-    height: 100vh; /* sets image to full viewport height to fit top and bottom */
-    width: auto; /* scales width proportionally, allowing blank side space if the image is narrower */
-    object-fit: contain; /* maintains aspect ratio */
     display: block;
+    max-width: 100%;     /* prevents horizontal overflow */
+    max-height: 90vh;    /* fits screen safely */
+    width: auto;
+    height: auto;
+    object-fit: contain;
 }
