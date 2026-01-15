@@ -3,26 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naadbramha | Certification</title>
+    <title>Know More - Naadbramha Water</title>
+    <!-- External CSS -->
     <link rel="stylesheet" href="knowmore.css">
 </head>
 <body>
 
-    <!-- Top Bar with Back Arrow -->
-    <header class="top-bar">
-        <a href="index.html" class="back-arrow" aria-label="Go back">←</a>
-    </header>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <a class="back-arrow" id="backBtn">&#8592;</a>
+        <h2 class="title">Naadbramha Water</h2>
+    </div>
 
-    <!-- Image Section -->
-    <main class="image-wrapper">
-        <img 
-            src="fssai.webp" 
-            alt="Naadbramha FSSAI Certification" 
-            class="fssai-image"
-            loading="lazy"
-        >
-    </main>
+    <!-- Image Area -->
+    <div class="image-wrapper">
+        <img src="bottle.webp" alt="Naadbramha Water Bottle" class="fssai-image" id="productImage">
+    </div>
 
+    <!-- Internal JS -->
+    <script>
+        // Back button functionality
+        document.getElementById('backBtn').addEventListener('click', () => {
+            window.history.back(); // Returns to previous page
+        });
+
+        // Fade-in effect for image
+        window.addEventListener('load', () => {
+            const img = document.getElementById('productImage');
+            img.classList.add('loaded');
+        });
+    </script>
 </body>
 </html>
-
