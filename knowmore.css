@@ -19,8 +19,9 @@ body {
     display: flex;
     align-items: center;
     padding: 0 16px;
-    background: white;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    background: #0077b6; /* Nice blue background */
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08); /* Subtle shadow */
+    color: white; /* Make text & back arrow visible */
 }
 
 /* BACK ARROW */
@@ -72,3 +73,4 @@ body {
         font-size: 22px;
     }
 }
+
