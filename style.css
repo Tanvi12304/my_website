@@ -1,0 +1,227 @@
+/* Reset & Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f9fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(90deg, #0077b6, #00b4d8);
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+.header h1 {
+    font-size: 42px;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+.header h1:hover {
+    color: #ffdd59;
+}
+
+.header p {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Product Section */
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.product-image img:hover {
+    transform: scale(1.05);
+}
+
+.product-details {
+    flex: 1;
+    margin-left: 20px; /* <-- shifted forward */
+}
+
+.product-details h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.product-details h2:hover {
+    color: #0077b6;
+}
+
+.product-details .tagline {
+    font-size: 16px;
+    color: #0077b6;
+    margin-bottom: 15px;
+}
+
+.product-details ul {
+    margin-left: 10px; /* extra spacing for list */
+}
+
+.product-details ul li {
+    margin-bottom: 10px;
+}
+
+/* FSSAI Section */
+.fssai-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.fssai-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.fssai-logo {
+    width: 100px;
+    height: auto;
+}
+
+/* Table Search */
+.search-box {
+    margin-bottom: 10px;
+}
+
+.search-box input {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.search-box input:focus {
+    border-color: #0077b6;
+    box-shadow: 0 2px 6px rgba(0,180,216,0.3);
+    outline: none;
+}
+
+/* Note Bar */
+.note-bar {
+    background-color: #e0f7fa;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-left: 4px solid #0077b6;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+/* Table */
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+th, td {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #0077b6;
+    color: white;
+    font-weight: 600;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #d0e7f9;
+    transition: background 0.3s ease;
+}
+
+/* FSSAI logos inside table smaller */
+.fssai-table-logo {
+    width: 25px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.license-number {
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* About Section */
+.about {
+    margin-top: 40px;
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* Footer */
+.footer {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+    .product {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fssai-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .fssai-logo {
+        align-self: center;
+    }
+
+    .product-details {
+        margin-left: 0; /* reset for small screens */
+    }
+}
