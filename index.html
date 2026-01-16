@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naadbramha | Mineral Water</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,9 +12,7 @@
 <header class="header">
     <div class="brand">
         <img src="logo.webp" alt="Naadbramha Logo" class="brand-logo">
-        <div class="brand-text">
-            <h1>Naadbramha</h1>
-        </div>
+        <h1>Naadbramha</h1>
     </div>
 </header>
 
@@ -24,7 +21,7 @@
     <!-- PRODUCT SLIDER -->
     <section class="product-slider">
         <div class="product-track">
-            <!-- 1L Product Card -->
+            <!-- 1L Product -->
             <div class="product-card">
                 <img src="1ltr.webp" alt="1 L Naadbramha Water Bottle">
                 <h2>Naadbramha Mineral Water</h2>
@@ -38,7 +35,7 @@
                 </ul>
             </div>
 
-            <!-- 500ml Product Card -->
+            <!-- 500ml Product -->
             <div class="product-card">
                 <img src="bottle.webp" alt="500 ml Naadbramha Water Bottle">
                 <h2>Naadbramha Mineral Water</h2>
@@ -57,7 +54,6 @@
     <!-- FSSAI SECTION -->
     <section class="fssai-page" aria-labelledby="fssai-heading">
         <div class="fssai-header">
-            <!-- Text block -->
             <div class="fssai-text">
                 <h1 id="fssai-heading" class="fssai-title">
                     Registered Proprietor / Brand Owner
@@ -69,79 +65,63 @@
                     Hadapsar, Pune, Maharashtra-411060
                 </p>
             </div>
-
-            <!-- Logo + license block -->
             <div class="fssai-logo-block">
-                <img src="fssai.webp" alt="FSSAI Logo" class="fssai-logo" loading="lazy">
+                <img src="fssai.webp" alt="FSSAI Logo" class="fssai-logo">
                 <span class="fssai-license-number">FSSAI Lic No: 11521036001346</span>
             </div>
         </div>
 
         <!-- Search Box -->
         <div class="search-box">
-            <label for="searchInput">Search FSSAI Records</label>
             <input type="text" id="searchInput" placeholder="Search by first three characters, address, or license number">
         </div>
-<br>
+
         <!-- Note Bar -->
         <div class="note-bar">
-            <p>
-                FOR MANUFACTURING UNIT ADDRESS, FSSAI LICENSE No. READ FIRST THREE CHARACTERS OF LOT NO/ BATCH NO. & SEE BELOW
-            </p>
+            FOR MANUFACTURING UNIT ADDRESS, FSSAI LICENSE No. READ FIRST THREE CHARACTERS OF LOT NO/ BATCH NO. & SEE BELOW
         </div>
 
         <!-- Table -->
         <div class="table-wrap">
-            <div class="table-scroll">
-                <table id="fssaiTable">
-                    <thead>
-                        <tr>
-                            <th>SR.</th>
-                            <th>First 3 Characters</th>
-                            <th>Address</th>
-                            <th>FSSAI License No</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>PPL</td>
-                            <td>MFD BY. PALLAVI PLASTICS PVT LTD<br>Dhanore, Pune, Maharashtra-41220</td>
-                            <td>
-                                <img src="fssai.webp" alt="FSSAI Logo" class="fssai-table-logo">
-                                <span class="license-number">11522997000510</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>RFB</td>
-                            <td>MFD BY. RM FOODS AND BEVERAGES<br>Sinhagad Road, Pune-411041</td>
-                            <td>
-                                <img src="fssai.webp" alt="FSSAI Logo" class="fssai-table-logo">
-                                <span class="license-number">10016022005428</span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <table id="fssaiTable">
+                <thead>
+                    <tr>
+                        <th>SR.</th>
+                        <th>First 3 Characters</th>
+                        <th>Address</th>
+                        <th>FSSAI License No</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>PPL</td>
+                        <td>MFD BY. PALLAVI PLASTICS PVT LTD<br>Dhanore, Pune, Maharashtra-41220</td>
+                        <td><img src="fssai.webp" class="fssai-table-logo"><span class="license-number">11522997000510</span></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>RFB</td>
+                        <td>MFD BY. RM FOODS AND BEVERAGES<br>Sinhagad Road, Pune-411041</td>
+                        <td><img src="fssai.webp" class="fssai-table-logo"><span class="license-number">10016022005428</span></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 
-    <!-- ABOUT SECTION -->
+    <!-- ABOUT -->
     <section class="about">
         <h2>About</h2>
         <p>
-            Naadbramha delivers premium-quality packaged drinking water enriched
-            with essential minerals, purified using advanced multi-stage
-            filtration to ensure safety, freshness, and consistency in every sip.
+            Naadbramha delivers premium-quality packaged drinking water enriched with essential minerals, purified using advanced multi-stage filtration to ensure safety, freshness, and consistency in every sip.
         </p>
     </section>
-
 </main>
 
 <!-- FOOTER -->
 <footer class="footer">
-    <p>© 2026 Naadbramha Food and Beverages Pvt. Ltd. All Rights Reserved.</p>
+    © 2026 Naadbramha Food and Beverages Pvt. Ltd. All Rights Reserved.
 </footer>
 
 <script src="script.js"></script>
